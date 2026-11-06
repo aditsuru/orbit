@@ -1,0 +1,74 @@
+{
+	// Components (function declaration, trailing named export)
+
+	"Component": {
+		"prefix": "rfc",
+		"scope": "typescriptreact,javascriptreact",
+		"description": "Function component with trailing named export",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}() {",
+			"  return (",
+			"    <div>",
+			"      $0",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"export { $1 }"
+		]
+	},
+
+	"Component with Props": {
+		"prefix": "rfcp",
+		"scope": "typescriptreact",
+		"description": "Function component with Props interface and trailing named export",
+		"body": [
+			"interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {",
+			"  $2",
+			"}",
+			"",
+			"function $1({ $3 }: $1Props) {",
+			"  return (",
+			"    <div>",
+			"      $0",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"export { $1 }"
+		]
+	},
+
+	// Next.js (default exports, required by the framework)
+
+	"Next Page": {
+		"prefix": "page",
+		"scope": "typescriptreact",
+		"description": "Next.js page",
+		"body": [
+			"export default function Page() {",
+			"  return (",
+			"    <div>",
+			"      $0",
+			"    </div>",
+			"  )",
+			"}"
+		]
+	},
+
+	"Next Layout": {
+		"prefix": "layout",
+		"scope": "typescriptreact",
+		"description": "Next.js layout",
+		"body": [
+			"export default function Layout({ children }: { children: React.ReactNode }) {",
+			"  return (",
+			"    <div>",
+			"      {children}",
+			"      $0",
+			"    </div>",
+			"  )",
+			"}"
+		]
+	}
+}

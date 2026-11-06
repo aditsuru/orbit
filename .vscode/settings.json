@@ -1,0 +1,24 @@
+{
+	// TypeScript
+	"js/ts.tsdk.path": "node_modules/typescript/lib",
+	"js/ts.preferences.importModuleSpecifier": "non-relative",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+	// Biome
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit"
+	},
+	"biome.enabled": true,
+	"biome.requireConfiguration": true,
+
+	// CSpell
+	"cSpell.enabled": true,
+	"cSpell.language": "en,en-US",
+	"cSpell.diagnosticLevel": "Information",
+
+	// Tailwind
+	"tailwindCSS.classFunctions": ["cva", "cn", "clsx", "cx"]
+}
