@@ -48,6 +48,7 @@ next-env.d.ts
 *.jpeg
 *.mp3
 *.zip
+!assets/thumbnail.png
 
 # Misc
 _scratchpad.md

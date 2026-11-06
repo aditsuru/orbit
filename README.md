@@ -3,7 +3,7 @@
 <div align="left">
 
 [![Stars](https://img.shields.io/github/stars/aditsuru/orbit?style=flat)](https://github.com/aditsuru/orbit/stargazers)
-[![Discord](https://img.shields.io/discord/1313767817996402698?style=flat&logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.gg/jwgQNhMEhn)
+[![Discord](https://img.shields.io/discord/1565582231714533457?style=flat&logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.gg/jwgQNhMEhn)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=aditsuru.orbit)
 
 </div>
